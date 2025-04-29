@@ -1,0 +1,34 @@
+*{
+  color: rgba(225, 77, 99, 0.673);
+}
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.neumorphic {
+    background: rgba(224, 224, 224, 0.6); 
+    border-radius: 20px;
+    box-shadow: inset 6px 6px 12px rgba(190, 190, 190, 0.6), inset -6px -6px 12px rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+
+.neumorphic-btn {
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.neumorphic-btn:active {
+    box-shadow: inset 6px 6px 12px #bebebe, inset -6px -6px 12px #ffffff;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTS Translator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex items-center justify-center h-screen text-gray-800">
+
+
+    <video class="video-bg" autoplay loop muted>
+        <source src="3252974-uhd_2560_1440_25fps.mp4" type="video/mp4">
+    </video>
+
+ 
+    <div class="neumorphic p-8 max-w-lg w-full text-center space-y-6">
+        <h1 class="text-3xl font-bold">TEXT TO SPEECH</h1>
+        <p class="text-gray-600 text-sm italic">Break language barriers effortlessly! Type in any language and hear it spoken in another—seamlessly and beautifully.  🌎</p>
+
+    
+        <label class="block text-sm font-medium">Input Language:</label>
+        <select id="inputLanguage" class="w-full p-2 rounded-lg text-black">
+            <option value="en">🇺🇸 English</option>
+            <option value="es">🇪🇸 Spanish</option>
+            <option value="fr">🇫🇷 French</option>
+            <option value="tl">🇵🇭 Filipino</option>
+            <option value="de">🇩🇪 German</option>
+        </select>
+
+  
+        <textarea id="text" class="w-full p-3 rounded-lg text-black" placeholder="Type your text here..."></textarea>
+
+        <label class="block text-sm font-medium">Output Language:</label>
+        <select id="outputLanguage" class="w-full p-2 rounded-lg text-black">
+          <option value="en">🇺🇸 English</option>
+          <option value="es">🇪🇸 Spanish</option>
+          <option value="fr">🇫🇷 French</option>
+          <option value="de">🇩🇪 German</option>
+          <option value="tl">🇵🇭 Filipino</option>
+          <option value="ja">🇯🇵 Japanese</option>
+      </select>
+      
+        <button id="translateSpeak" class="w-full py-2 rounded-lg neumorphic-btn font-bold text-lg">
+            Translate & Speak
+        </button>
+
+    
+        <div id="translatedText" class="mt-4 text-lg font-medium"></div>
+    </div>
+
+    <script src="script.js"></script>
+     
+</body>
+</html>
